@@ -39,3 +39,5 @@ And lets stub in enough of the code to let us see that we can access the Node st
 	}
 ```
 Now you can implement the real code based on the code from the book in Binary_Search_Tree.h from the book.
+
+From Koffman, Elliot B. (2011-12-01). Objects, Abstraction, Data Structures and Design: Using C++. Wiley Higher Ed. Kindle Edition.
