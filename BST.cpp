@@ -19,7 +19,7 @@
 	{
 	    cout << "add"<<endl;
 	    Node *ptr = new Node(data);
-	    ptr->setLeftChild(NULL); // To test that the function works
+	    ptr->leftChild = NULL; // To test that the function works
 	    NodeInterface *rval = ptr->getLeftChild();
 	    long value = (long)rval;
 	    cout << "Added "<<value<<endl;
