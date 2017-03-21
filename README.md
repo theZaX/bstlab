@@ -31,7 +31,7 @@ And lets stub in enough of the code to let us see that we can access the Node st
 	{
 	    cout << "add"<<endl;
 	    Node *ptr = new Node(data);
-	    ptr->leftChild = NULL; // To test that the function works
+	    ptr->leftChild = NULL; // To test that the friend relationship works
 	    NodeInterface *rval = ptr->getLeftChild();
 	    long value = (long)rval;
 	    cout << "Added "<<value<<endl;
