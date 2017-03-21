@@ -1,10 +1,9 @@
-//YOU MAY NOT MODIFY THIS DOCUMENT
-
+#pragma once
 #include "NodeInterface.h"
 using namespace std;
 
 class Node : public NodeInterface {
-
+	friend class BST; // Allow BST to access data members
 public:
 	Node(int value) {data = value;leftChild = NULL; rightChild = NULL;}
 	~Node() {}
