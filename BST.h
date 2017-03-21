@@ -1,3 +1,4 @@
+#pragma once
 #include "BSTInterface.h"
 #include "Node.h"
 
