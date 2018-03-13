@@ -11,7 +11,7 @@ Now create a UML diagram showing these relationships.
 
 Create a Makefile to compile your code.  This Makefile will also create the program from the book so you can understand this code.
 ```
-TARGETS = Test_Binary_Search_Tree_Numbers 
+TARGETS = Test_Binary_Search_Tree_Numbers bst
 CC = g++
 CCFLAGS = -std=c++11 -g
 bst: main.cpp BSTInterface.h NodeInterface.h BST.h BST.cpp Node.h Node.cpp
@@ -38,6 +38,6 @@ And lets stub in enough of the code to let us see that we can access the Node st
 	    root = ptr;
 	}
 ```
-Now you can implement the real code based on the code from the book in Binary_Search_Tree.h from the book.
+Now you can implement the real code.  You can get good ideas from the code in Binary_Search_Tree.h, but dont use any code that you dont understand.
 
 From Koffman, Elliot B. (2011-12-01). Objects, Abstraction, Data Structures and Design: Using C++. Wiley Higher Ed. Kindle Edition.
