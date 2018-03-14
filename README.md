@@ -7,7 +7,6 @@ You will need to inherit from BSTInterface.h to create BST.h.  And you will need
 
 You will also need to inherit from NodeInterface.h to create Node.h  And you will need to create an implementation file for this class (Node.cpp).  Create stubs for all of the functions.
 
-Now create a UML diagram showing these relationships.
 
 Create a Makefile to compile your code.  This Makefile will also create the program from the book so you can understand this code.
 ```
