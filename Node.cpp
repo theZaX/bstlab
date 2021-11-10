@@ -22,7 +22,7 @@ NodeInterface *Node::getLeftChild() const
 }
 
 /*
-	* Returns the right child of this node or null if it doesn't have one.
+	* Returns the right child of this node or null if it doesn't have one
 	*
 	* @return the right child of this node or null if it doesn't have one.
 	*/
