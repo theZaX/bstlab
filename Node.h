@@ -2,10 +2,16 @@
 #include "NodeInterface.h"
 using namespace std;
 
-class Node : public NodeInterface {
+class Node : public NodeInterface
+{
 	friend class BST; // Allow BST to access data members
 public:
-	Node(int value) {data = value;leftChild = NULL; rightChild = NULL;}
+	Node(int value)
+	{
+		data = value;
+		leftChild = NULL;
+		rightChild = NULL;
+	}
 	~Node() {}
 
 	/*
@@ -20,19 +26,25 @@ public:
 	*
 	* @return the left child of this node or null if it doesn't have one.
 	*/
-	NodeInterface * getLeftChild() const;
+	NodeInterface *getLeftChild() const;
 
 	/*
 	* Returns the right child of this node or null if it doesn't have one.
 	*
 	* @return the right child of this node or null if it doesn't have one.
 	*/
-	NodeInterface * getRightChild() const;
+	NodeInterface *getRightChild() const;
+
+	Node *&getRight();
+	Node *&getLeft();
+
+	void setData(int dataToSet);
+
 	void setLeftChild(Node *ptr);
 	void setRightChild(Node *ptr);
+
 protected:
 	Node *leftChild;
 	Node *rightChild;
 	int data;
-
 };

@@ -2,10 +2,14 @@
 #include "BSTInterface.h"
 #include "Node.h"
 
-class BST : public BSTInterface {
+class BST : public BSTInterface
+{
 public:
-	BST() { root = NULL;}
-	virtual ~BST() {}
+	BST() { root = NULL; }
+	virtual ~BST()
+	{
+		clear();
+	}
 
 	//Please note that the class that implements this interface must be made
 	//of objects which implement the NodeInterface
@@ -15,7 +19,7 @@ public:
 	*
 	* @return the root node for this tree.
 	*/
-	NodeInterface * getRootNode() const;
+	NodeInterface *getRootNode() const;
 
 	/*
 	* Attempts to add the given int to the BST tree
@@ -25,6 +29,8 @@ public:
 	*/
 	bool add(int data);
 
+	void replace(Node *&old_root, Node *&local_root);
+
 	/*
 	* Attempts to remove the given int from the BST tree
 	*
@@ -33,10 +39,17 @@ public:
 	*/
 	bool remove(int data);
 
+	bool remove(Node *&local_root, int data);
+
 	/*
 	* Removes all nodes from the tree, resulting in an empty tree.
 	*/
 	void clear();
+
+private:
+	bool add(int data, Node *&node);
+	void recursiveClear(Node *node);
+
 protected:
 	Node *root;
 };
